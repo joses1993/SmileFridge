@@ -21,6 +21,7 @@ using std::string;
 #include "User.hpp"
 #include "Item.hpp"
 #include "Inventory.hpp"
+#include "climateControl.h"
 
 // Prototypes
 
@@ -52,6 +53,9 @@ int main()
 		cout << item->GetDate() << "| " << item->GetQuantity() << "| " << item->GetOrderPoint() << endl;
 	}
 
+    climateControl cC;
+    cC.climateMenu();
+	
     return 0;
 } //End Main
 
